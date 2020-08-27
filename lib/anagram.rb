@@ -5,7 +5,7 @@ class Anagram
     @word = word
   end
   
-  def match
+  def match(word_array)
     #should:
     #iterate over the array
     #compare each word of array to word Anagram class is initialized with
@@ -14,8 +14,8 @@ class Anagram
     #compare arrays with ==
     #maybe you also need to sort array's elements? then compare to see if ==
    
-    word_array.select do |element|
-      (@word.split("").sort) == (element.split("").sort)
+    word_array.select do |word|
+      word.split("").sort == @word.split("").sort)
     end 
   end
   
