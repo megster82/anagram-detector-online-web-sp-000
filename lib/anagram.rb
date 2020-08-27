@@ -13,6 +13,7 @@ class Anagram
     #note: split words into array of letters with word.split("")
     #compare arrays with ==
     #maybe you also need to sort array's elements? then compare to see if ==
+   
     word_array.select do |element|
       (@word.split("").sort) == (element.split("").sort)
     end 
