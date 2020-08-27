@@ -15,7 +15,7 @@ class Anagram
     #maybe you also need to sort array's elements? then compare to see if ==
    
     word_array.select do |word|
-      word.split("").sort == @word.split("").sort)
+      word.split("").sort == @word.split("").sort
     end 
   end
   
